@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="icon" href="../images/Goldman&Hirshleifer_cover_3D.png" type="image/x-icon" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+        <!-- Toggler for mobile and tablet view -->
+        <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo (centered on mobile, right on desktop) -->
+        <a class="navbar-brand order-lg-2 mx-auto" href="index.html">
+            <img src="../images/Goldman-Hirshleifer_logo-black.png" alt="Jennifer's logo" class="nav_bar_logo" width="200">
+        </a>
+
+        <!-- Collapsible menu links (aligns left on desktop) -->
+        <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    
+    <!-- Events Section -->
+    <main class="container my-5 center-align-container flex-fill">
+        <div class="container my-5">
+            <div class="header_des mx-auto text-center">
+                <h4 style="font-weight: bold; color: #9ecca2;">Upcoming Events</h4>
+            </div>
+
+            <!-- Dynamic Events Container -->
+            <div class="row g-4 my-5" id="events-container">
+                <!-- Events will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-muted py-3 mt-auto">
+        &copy; Pace University: Jammie-Ann Matthias, Jordan Chisolm, Katya Lievano, Melodie Cornelly, Oksana Hasii. All Rights Reserved. Designed by Jammie-Ann Matthias
+    </footer>
+
+    <script>
+        // Events Data: ADD OR REMOVE EVENTS HERE
+        const events = [
+            { title: 'Sandwiched In', time: '12:00 pm - 1:00 pm', date: 'December 6, 2024', description: 'Join us to learn about the inspiring memoir.', image: '../images/PWPL.jpg', more_info: 'https://portwashington.librarycalendar.com/event/sandwiched-66551'},
+            { title: 'Book Signing', time: '11:30 am - 1:00 pm', date: 'December 7, 2024', description: 'Book signing and reading at Buddah Jams Yoga Studio.', image: '../images/BuddahJams.jpg',  more_info: 'https://www.buddhajams.com/schedule' },
+            { title: 'PACE University Contest', time: '1:20 pm - 2:30 pm', date: 'December 13, 2024', description: 'Student design competition at PACE University.', image: '../images/PaceUniversity.jpg',  more_info: 'https://inthefaceofcatastrophe.com/event/student-design-competition/'},
+        ];
+
+        // Find the container for rendering events
+        const eventContainer = document.getElementById('events-container');
+
+        // Function to Render Events
+        function renderEvents() {
+            eventContainer.innerHTML = events.map(event => `
+                <div class="col-md-6 col-lg-4">
+                    <div class="card event-card shadow-sm">
+                        <img src="${event.image}" alt="${event.title}" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">${event.title}</h5>
+                            <p class="event-time">${event.time}</p>
+                            <p class="event-date">${event.date}</p>
+                            <p class="card-text">${event.description}</p>
+                            <a href="${event.more_info}" class="btn sub-btn btn btn-outline-dark">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Render Events on Page Load
+        renderEvents();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,567 @@
+/* Base Styles */
+body {
+  margin: 0;
+  background-image: url('../images/bg-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.header_des{
+  background-color: #ffffff;
+  width: 60%;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  animation: fadeSlideIn 2s;
+}
+
+/* Animation for Image Frame (Fade & Slide In) */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+}
+
+li {
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  animation-delay: 1.5s;
+  animation: fadeSlideIn 2s; /* Fade & Slide In Animation */
+}
+
+nav {
+  background-color: #ffffff;
+  color: black;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_bar_logo {
+  width: 300px;
+  height: auto;
+  padding-left: 10px;
+  margin: 0 auto;
+  animation: fadeSlideIn 1s; /* Fade & Slide In Animation */
+
+}
+
+.nav_now{
+  text-shadow: #fef667 2px 5px;
+}
+
+.logo {
+  display: flex;
+  justify-content: right;
+}
+
+/* Footer Styles */
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  margin-top: 10%;
+}
+
+    /* Custom CSS for pic_frame responsiveness */
+.pic_frame {
+  position: relative;
+  width: 100%; /* Full width to ensure scaling on smaller screens */
+  max-width: 320px; /* Restrict max width on larger screens */
+  margin: 0 auto;
+}
+
+
+/* Container for the image with a background */
+.container-img {
+  position: relative;
+  width: 100%;
+  padding-top: 125%; /* Maintain aspect ratio */
+  background-image: url('../images/jennifer_r_goldman_3.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  animation: fadeSlideIn 1s;
+}
+
+/* Container for the book image */
+.container-img-book {
+  position: relative;
+  width: 100%;
+  padding-top: 125%; /* Maintain aspect ratio */
+  background-image: url('../images/book-cover.png'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  animation: fadeSlideIn 1s;
+}
+
+.container-img-amanda {
+  position: relative;
+  width: 100%;
+  padding-top: 125%; /* Maintain aspect ratio */
+  background-image: url('../images/Amanda_Gwen_Goldman.png'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  animation: fadeSlideIn 1s;
+}
+
+.container-img-caryn {
+  position: relative;
+  width: 100%;
+  padding-top: 125%; /* Maintain aspect ratio */
+  background-image: url('../images/caryn-placeholder.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  animation: fadeSlideIn 1s;
+}
+
+/* Container for the image with a background */
+.container-img-brain {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 125%; /* Maintain aspect ratio */
+  background-image: url('../images/brain.png'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  animation: fadeSlideIn 1s;
+}
+
+
+/* Container for the image with a background */
+.container-img-recovery {
+  position: relative;
+  width: 100%;
+  padding-top: 125%; /* Maintain aspect ratio */
+  background-image: url('../images/recovery.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  animation: fadeSlideIn 1s;
+}
+
+/* Container for the image with a background */
+.container-img-support {
+  position: relative;
+  width: 130%;
+  padding-top: 125%; /* Maintain aspect ratio */
+  background-image: url('../images/support.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  animation: fadeSlideIn 1s;
+}
+
+/* Container for the image with a background */
+.container-img-jenn {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 125%; /* Maintain aspect ratio */
+  background-image: url('../images/jenn.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  animation: fadeSlideIn 1s;
+}
+
+.container-txt {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  z-index: 3;
+  animation: fadeSlideIn 1s;
+}
+
+
+/* Border for the image */
+.img-border {
+  position: absolute;
+  top: -20px;
+  left: 40PX;
+  width: 300px;
+  height: 420PX;
+  border: 4.5px solid #ffffff; /* White border */
+  box-sizing: border-box;
+  z-index: 3;
+  animation-delay: 1.5s;
+  animation: fadeSlideIn 1s;
+}
+
+/* Border for the text */
+.txt-border {
+  position: absolute;
+  top: -20px;
+  left: 20PX;
+  width: 150%;
+  height: 340PX;
+  border: 4.5px solid #F2CED4;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Background layer */
+.img-bg {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: fadeSlideIn 1s;
+  z-index: -1;
+}
+
+/* Background layer */
+.txt-bg {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  width: 150%;
+  height: calc(100% + 20px);
+  border: 4.5px solid #bfdcc2;
+  background-color: rgba(255, 255, 255, 0.316);
+  
+  z-index: -1;
+}
+
+.get_book_logo{
+  width: 160px;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  animation: fadeSlideIn 1s; /* Fade & Slide In Animation */
+}
+
+.logo_table td{
+  background-color: transparent;
+}
+
+.subscribe{
+  width: 100%;
+  background-color: #A4D7A9;
+}
+
+.sub-btn{
+  background-color: #F9B3BF;
+  box-shadow: 0 5px #666;
+  border: none;
+  border-radius: 20px;
+  animation-delay: 1.5s;
+  animation: fadeSlideIn 2s;
+}
+
+.sub-btn:hover{
+  background-color: #e08292;
+  border: none;
+}
+
+.sub-btn:active {
+  background-color: #e08292;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  overflow: hidden;
+}
+
+.reader_comments{
+  background-color: #ffffff6f;
+  padding: 80px;
+  border-radius: 50px;
+  text-align: center;
+  animation: fadeSlideIn 1s;
+}
+
+.reader_name{
+  background-color: #ffffff6f;
+  color: #A4D7A9;
+  width: 20%;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  animation: fadeSlideIn 1s;
+}
+
+.authors{
+  width: 100%;
+  height: auto;
+}
+
+.social_media_icons{
+  width: 25px;
+}
+
+.fm{
+  background-color: #ffffffa3;
+  border-radius: 20px;
+}
+
+/* ?????????????? */
+  /* Responsive styles for the text frame */
+  .container-txt {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    width: 150%;
+    z-index: 3;
+    animation: fadeSlideIn 2s;
+  
+  }
+
+  .txt-border {
+    position: absolute;
+    top: -20px;
+    left: 20PX;
+    width: 150%;
+    height: 340PX;
+    border: 4.5px solid #F2CED4; /* White border */
+    box-sizing: border-box;
+    z-index: 2;
+  }
+
+  /* Background layer */
+.txt-bg {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  width: 150%;
+  height: calc(100% + 20px);
+  border: 4.5px solid #bfdcc2;
+  background-color: rgba(255, 255, 255, 0.316);
+  
+  z-index: -1;
+}
+
+/* Custom Pink Outlined Button */
+.btn-pink-outline {
+  color: #000000;  /* Pink text */
+  font-weight: bold;
+  border: 2px solid #ffacc8;  /* Pink border */
+  background-color: transparent;  /* Transparent background */
+  box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.5);
+  width: 50%;
+  border-radius: 20px;
+}
+
+/* Hover and focus effects */
+.btn-pink-outline:hover {
+  background-color: #e91e63;  /* Pink background on hover */
+  color: white;  /* White text on hover */
+}
+
+.illustrations{
+  width: 400px;
+  height: auto;
+}
+
+.event-card {
+  transition: transform 0.2s;
+}
+.event-card:hover {
+  transform: scale(1.05);
+}
+.event-date {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.event-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.event-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+
+/* Media Queries */
+  /* Media Queries */
+@media (max-width: 1024px) {
+  nav{
+    font-size: 10px;
+  }
+  .nav_links {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .nav_bar_logo {
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  .pic_frame-txt{
+    right: 80px;
+  }
+
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container-txt {
+    padding: 15px; /* Reduced padding on smaller screens */
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+  .txt-border {
+    top: -10px;
+    left: 5px;
+    height: 220px;
+  }
+  .txt-bg {
+    top: 8px;
+    left: -10px;
+    width: calc(100% + 100px);
+  }
+}
+
+
+@media (max-width: 680px) {
+  .pic_frame{
+    left: 10px;
+  }
+  .container-img{
+    width: 90%
+  }
+  .img-border{
+    top: -18px;
+    left: 50px;
+    height: 105%;
+    width: 80%;
+    border: 10px solid white;
+  }
+  .img-bg{
+  left: -15px;
+  width: 80%;
+  }
+
+  .nav_bar_logo {
+    width: 200px;
+  }
+
+  footer {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+  .reader_comments{
+    padding: 40px;
+  }
+  .reader_name{
+    width: 40%;
+  }
+  .author-text{
+    padding: 20px;
+  }
+    /* Responsive styles for the text frame */
+.container-txt {
+  position: relative;
+  width: 100%; /* Full width to allow responsiveness */
+  max-width: 100%; /* Limit max width */
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px; /* Adjust padding for smaller screens */
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.txt-border {
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border: 4.5px solid #F2CED4;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.txt-bg {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 20px);
+  border: 4px solid #bfdcc2;
+  background-color: rgba(255, 255, 255, 0.316);
+  z-index: 1;
+}
+  .illustrations{
+    width: 200px;
+    height: auto;
+  }
+  li{
+    font-size: 12px;
+  }
+}
+
+/*-- BIG SCREENS --*/
+@media (min-width: 2560px) {
+  .img-bg{
+    height: 400px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .img-bg{
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-bg{
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-bg{
+    height: 400px;
+    right: 8px;
+  }
+}
+
+
+@media (max-width: 375px){
+  .img-border{
+    top: -30px;
+    left: 12px;
+    height: 428px;
+    border: 1px solid #ffffff;
+  }
+  .img-bg{
+  left: -15px;
+  }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 576px) {
+  .pic_frame {
+    max-width: 90%; /* Shrink slightly on extra-small screens */
+  }
+  .img-border {
+    border-width: 3px;
+  }
+}
